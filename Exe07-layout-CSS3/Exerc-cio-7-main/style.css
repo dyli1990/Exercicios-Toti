@@ -1,0 +1,449 @@
+Body {
+    padding: 20px;
+    text-align: center;
+    font-family: "Edu VIC WA NT Beginner";
+    background-color: rgb(231, 231, 231);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 5px;
+}
+
+
+.cabeçalho {
+    grid-column: 1 / 6;
+    
+}
+
+.barra_menu{
+    grid-column: 1 / 6;
+    background-color: #fff;
+    display: flex; 
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    top: 0px;
+    border: 1px solid lightgray;  
+    box-shadow: 10px 5px 5px lightgrey;  
+    border-radius: 04px;
+    justify-content: right; 
+}
+
+#logotipo {
+    position: absolute;
+    top: 0;
+    left: 2px;
+
+
+}
+
+.lista_botones {
+    text-decoration: none;    
+    margin: 20px;
+    text-align: right;  
+    display: inline-block;
+    
+}
+
+.link_boton1 {
+    text-decoration: none;
+    color: #0a66c2;
+    border-radius: 20px;
+    border: 1px solid #DB0E53;
+    margin: 20px;
+    text-align: right;
+    top: 15%;
+    right: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.link_boton2 {
+    text-decoration: none;
+    color: #0a66c2;
+    border-radius: 20px;
+    border: 1px solid #DB0E53;
+    margin: 20px;
+    text-align: right;
+    top: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.link_boton3 {
+    text-decoration: none;
+    color: #0a66c2;
+    border-radius: 20px;
+    border: 1px solid #DB0E53;
+    margin: 20px;
+    text-align: right;
+    top: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.link_boton4 {
+    text-decoration: none;
+    color: #0a66c2;
+    border-radius: 20px;
+    border: 1px solid #DB0E53;
+    margin: 20px;
+    text-align: right;
+    top: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.conteudo {
+    grid-column: 1 / 6;
+}
+
+.image_central {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.texto_titulo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    font-size: 60px;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+/*seccion de Card*/
+.colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.card {    
+    height: 425px;
+    width: 225px;
+    background-color: linen;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 50%);
+    font-weight: 500;
+    margin-top: 10px;    
+}
+
+.ancora_card {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.card_imagem {
+    max-height: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+
+.card:hover {
+    box-shadow:  0 10px 15px 0 rgba(0, 0, 0, 50%);
+}
+
+.card_info {
+    padding: 16px;    
+}
+
+.card_info > span {
+    display: block;
+}
+
+.card_titulo {
+    background-color: #DB0E53;    
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 16px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+.card_subtitulo {    
+    line-height: 14px;
+    font-size: 14;
+    margin: 5px;
+}
+
+.card_descripcao {
+    line-height: 16px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+/*segunda Card*/
+
+.card_2 { 
+    height: 425px;
+    width: 225px;
+    background-color: linen;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 50%);
+    font-weight: 500;
+    margin-top: 10px;    
+}
+
+.ancora_card_2 {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.card_imagem_2 {
+    max-height: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+
+.card_2:hover {
+    box-shadow:  0 10px 15px 0 rgba(0, 0, 0, 50%);
+}
+
+.card_info_2 {
+    padding: 16px;    
+}
+
+.card_info_2 > span {
+    display: block;
+}
+
+.card_titulo_2 {
+    background-color: #DB0E53;    
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 16px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+.card_subtitulo_2 {    
+    line-height: 14px;
+    font-size: 14;
+    margin: 5px;
+}
+
+.card_descripcao_2 {
+    line-height: 16px;
+    font-size: 12px;
+    margin: 5px;
+}
+
+/*tercera Card*/
+.ancora_card_3 {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.card_imagem_3 {
+    max-height: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.card_3 {
+    height: 425px;
+    width: 225px;
+    background-color: linen;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 50%);
+    font-weight: 500;
+    margin-top: 10px;    
+}
+.card_3:hover {
+    box-shadow:  0 10px 15px 0 rgba(0, 0, 0, 50%);
+}
+
+.card_info_3 {
+    padding: 16px;    
+}
+
+.card_info_3 > span {
+    display: block;
+}
+
+.card_titulo_3 {
+    background-color: #DB0E53;    
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 16px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+.card_subtitulo_3 {    
+    line-height: 14px;
+    font-size: 14;
+    margin: 5px;
+}
+
+.card_descripcao_3 {
+    line-height: 16px;
+    font-size: 12px;
+    margin: 5px;
+}
+
+/*cuarta Card*/
+.ancora_card_4 {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.card_imagem_4 {
+    max-height: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.card_4 {
+    height: 425px;
+    width: 225px;
+    background-color: linen;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 50%);
+    font-weight: 500;
+    margin-top: 10px;    
+}
+.card_4:hover {
+    box-shadow:  0 10px 15px 0 rgba(0, 0, 0, 50%);
+}
+
+.card_info_4 {
+    padding: 16px;    
+}
+
+.card_info_4 > span {
+    display: block;
+}
+
+.card_titulo_4 {
+    background-color: #DB0E53;    
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 16px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+.card_subtitulo_4 {    
+    line-height: 14px;
+    font-size: 14;
+    margin: 5px;
+}
+
+.card_descripcao_4 {
+    line-height: 16px;
+    font-size: 12px;
+    margin: 5px;
+}
+
+/*quinta Card*/
+.ancora_card_5 {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.card_imagem_5 {
+    max-height: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.card_5 {
+    height: 425px;
+    width: 225px;
+    background-color: linen;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 50%);
+    font-weight: 500;
+    margin-top: 10px;    
+}
+.card_5:hover {
+    box-shadow:  0 10px 15px 0 rgba(0, 0, 0, 50%);
+}
+
+.card_info_5 {
+    padding: 16px;    
+}
+
+.card_info_5 > span {
+    display: block;
+}
+
+.card_titulo_5 {
+    background-color: #DB0E53;    
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 16px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+.card_subtitulo_5 {    
+    line-height: 14px;
+    font-size: 14;
+    margin: 5px;
+}
+
+.card_descripcao_5 {
+    line-height: 16px;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.formulario {
+    background-color: #343434;    
+    border-radius: 3px;
+    color: #fff;
+    line-height: 14px;
+    font-size: 16px;
+    /*width: fit-content;*/
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+/*aqui el formulario y mi informacion de contacto*/
+footer {
+    background-color: #343434;
+    color: #fff;
+    justify-content: center;
+    
+}
+
