@@ -1,0 +1,11 @@
+CREATE VIEW tb_creditos  as select id_cliente_conta as id_temp, SUM(transacao.valor) as creditos
+from transacao
+where id_tipo_transacao = 1
+group by id_cliente_conta;
+
+select id_cliente_conta, tb_creditos.creditos - SUM(transacao.valor)  as saldo_conta
+from transacao
+inner join tb_creditos on tb_creditos.id_temp = id_cliente_conta
+where id_tipo_transacao in (2,3,4)
+group by id_cliente_conta
+order by saldo_conta asc;

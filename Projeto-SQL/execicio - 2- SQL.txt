@@ -1,0 +1,22 @@
+SELECT
+	cliente_conta.id_conta, conta.numero as "numero de conta",
+    COUNT(transacao.id) AS "Quantidade_de_trasacao"
+FROM transacao
+JOIN cliente_conta
+	ON transacao.id_cliente_conta = cliente_conta.id
+JOIN conta
+	ON cliente_conta.id = conta.id
+GROUP BY conta.id
+ORDER BY Quantidade_de_trasacao DESC
+Limit 5;
+SELECT
+	cliente_conta.id_conta, conta.numero as "numero de conta",
+    COUNT(transacao.id) AS "Quantidade_de_trasacao"
+FROM transacao
+JOIN cliente_conta
+	ON transacao.id_cliente_conta = cliente_conta.id
+JOIN conta
+	ON cliente_conta.id = conta.id
+GROUP BY conta.id
+ORDER BY Quantidade_de_trasacao asc
+Limit 5;
